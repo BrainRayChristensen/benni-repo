@@ -39,7 +39,7 @@ Benni benni = new Benni();
 benni.init(this, usbManager);
 ```
 
-#### Robot Motion
+## Robot Motion
 Benni will move in the direction you tell it to until you tell it to stop
 ```Java
 benni.moveForward();
@@ -49,7 +49,7 @@ benni.moveRight();
 benni.stopMovement();
 ```
 
-#### Robot Speech
+## Robot Speech
 ```Java
 String message;
 benni.say(message);
