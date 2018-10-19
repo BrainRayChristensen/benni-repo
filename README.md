@@ -23,7 +23,9 @@ There should now be a benni-debug module in your project.
 <img src="https://github.com/BrainRayChristensen/benni-repo/blob/master/instructionImages/img2.png" width="300" alt="instruction image">  
 
 
-7. Next, open the `build.gradle` file in the module you want to use benni in and add `implementation 'com.github.felHR85:UsbSerial:4.5.2'` to the list of dependencies.
+7. Next, open the `build.gradle` file in the module you want to use benni in and add  
+`implementation 'com.github.felHR85:UsbSerial:4.5.2'`  
+to the list of dependencies.
 
 
 <img src="https://github.com/BrainRayChristensen/benni-repo/blob/master/instructionImages/img4.png" width="300" alt="instruction image">  
@@ -50,7 +52,8 @@ benni.stopMovement();
 ```
 
 ## Robot Speech
+Benni will say whatever you want, at least if it's english
 ```Java
-String message;
+String message = "Hello World!";
 benni.say(message);
 ```
