@@ -1,6 +1,6 @@
 # Benni
 
-# Instructions
+# Importing The Benni Library
 
 
 1. Clone or download this repo.
@@ -27,3 +27,30 @@ There should now be a benni-debug module in your project.
 
 
 <img src="https://github.com/BrainRayChristensen/benni-repo/blob/master/instructionImages/img4.png" width="300" alt="instruction image">  
+
+8. Build your project and you should now be able to use benni in your program! Happy coding!
+
+# Implementing The Code
+
+### Before any of the other commands are implemented, add these lines to the onCreate() method of your startup activity
+```Java
+UsbManager usbManager = (UsbManager) getSystemService(USB_SERVICE);  
+Benni benni = new Benni();  
+benni.init(this, usbManager);
+```
+
+#### Robot Motion
+Benni will move in the direction you tell it to until you tell it to stop
+```Java
+benni.moveForward();
+benni.moveBackwards();
+benni.moveLeft();
+benni.moveRight();
+benni.stopMovement();
+```
+
+#### Robot Speech
+```Java
+String message;
+benni.say(message);
+```
