@@ -3,7 +3,7 @@
 # Importing The Benni Library
 
 
-1. Clone or download this repo.
+1. Download benni-debug.aar from this repo.
 2. In your project, go to the top, click file, click new and then click on New Module...
 
 
